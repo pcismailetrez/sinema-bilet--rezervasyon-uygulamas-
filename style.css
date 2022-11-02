@@ -1,0 +1,97 @@
+body{
+    background-color: #dda305;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    /* aligin itemx  center dedik oluşurdugumu yapıyı tam ortaya alması için yaptık  */
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.seat{
+    background-color: #444451;
+    height: 30px;
+    width: 30px;
+    margin: 3px;
+    border-radius: 5px; 
+    /* border radius 5px yaptık kutuklarımız daha güzel gözüksün diye yaptık  */
+
+}
+
+.seat.selected{
+    background-color: #f6eb6f;
+    /* bu satırı js ile atıyıcagım */
+}
+.seat:not(.reserved):hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+.seat.reserved{
+    background-color: #fff;
+}
+
+.seat:nth-of-type(2){
+    margin-right: 20px;
+    /* ikinci elemandan sonra 20 px ayır babuş */
+}
+.seat:nth-last-of-type(3){
+    margin-right: 20px;
+    /* sondan 3. elemandan itibaren 20 px kaydır */
+}
+.row{
+    display: flex;
+    /* yapınıın alt alta değilde yan yana olması için  */
+}
+.screen{
+    background-color: #fff;
+    height: 90px;
+    width: 100%;
+    margin: 20px 0;
+    box-shadow: 0 3px 8px rgba(255,255,255,0.7);
+}
+.movie-list{
+    margin: 20px 0;
+
+}
+.movie-list1{
+    width: 200px;
+    height: 40px;
+    border-color: rgb(255, 0, 43);
+}
+
+.info{
+    background-color: rgba(0,0,0, 0.2);
+    padding: 5px 10px;
+    color: #777;
+    display: flex;
+}
+.info li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+p.text span{
+    color: #141204;
+    font-size: 50px;
+}
+p{
+    font-size: 50px;
+}
+
+.renk.lux{
+   width: 999px;
+  
+  
+}
+.row.lux {
+    border: 5px solid #555;
+    margin-top: 40px;
+    
+  }
+  .posizyonrengi{
+    color: rgb(0, 4, 255);
+  }
+  
